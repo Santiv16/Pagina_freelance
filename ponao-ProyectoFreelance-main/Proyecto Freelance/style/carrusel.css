@@ -1,0 +1,85 @@
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .slider {
+    padding: 0 0 40px 0;
+    overflow: hidden;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .slider:before,
+  .slider:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .slider:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .slider:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  .slider:hover .slider-mov {
+    animation-play-state: paused;
+  }
+
+.slide{
+  padding: 10px;
+}
+  
+.slider-mov {
+  display: inline-block;
+  animation: slide 30s infinite linear;
+}
+
+.calificaciones{
+  display: flex;
+}
+
+.card{
+  width: 350px;
+  transition: 300ms;
+}
+
+.card:hover{
+  cursor:pointer;
+  transform: scale(1.10);
+}
+
+.card img{
+  height: 300px;
+  width: 100%;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+}
+
+.star{
+    font-size: 32px;
+    color: #bbb;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.star:hover,
+.star.checked{
+    color:gold;
+}

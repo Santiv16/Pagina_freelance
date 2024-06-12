@@ -1,0 +1,176 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #fcfcfc;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Izquierda{
+    width: 65%;
+}
+
+.Derecha img{
+    height: 100%;
+    width: 150%;
+}
+
+.contenedor{
+    position: static;
+    padding: 100px 0 50px 0;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+}
+
+.imgContenido{
+    float: right;
+    clear: right;
+}
+
+.swiper{
+    width: 100%;
+}
+
+.swiper-slide{
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    border:5px solid #0f1c57;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.icons i{
+    font-size: 40px;
+    color:#0f1c57;
+    transition: color 0.3s;
+}
+
+.icons i:hover{
+    color: #969696;
+    
+}
+
+.icons img{
+    width: 80px;
+    height: 60px;
+}
+
+.product-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-txt{
+    flex-basis: 50%;
+    text-align: left;
+}
+
+.product-txt span{
+    font-size: 25px;
+    color: #0f1c57;
+    font-weight: bold;
+}
+
+.product-txt h3{
+    font-size: 20px;
+    color: #000000; 
+    text-transform: uppercase;
+}
+
+.product-txt p{
+    font-size: 14px;
+    color: #000000;
+}
+
+.product-img{
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.product-img img{
+    width: 110px;
+    height: 140px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 13px 55px;
+    border: 3px solid #0f1c57;
+    border-radius: 25px;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.btn-1:hover{
+    border: 1px solid #9d9b9b;
+    color: white;
+    background-color: #0f1c57;
+}
+
+.img-ajustada{
+    width: 100%;
+    height: auto;
+    max-width: 110px;
+    display: block;
+    margin: 0 auto;
+}
+
+.tabla-criticas {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 30px 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #222aa0;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #01bcf5;
+  }
+
+.titulo{
+    color: white;
+    font-size: 25px;
+}
+
+@media(max-width: 600px){
+    .contenedor{
+        display: block;
+        padding: 130px 0 50px 0;
+    }
+
+    .contenedor .Izquierda{
+        width: 100%;
+        position: relative;
+        padding: 0 0 30px 0;
+    }
+
+    .contenedor .Derecha{
+        height: 80vh;
+        width: 100%;
+    }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contacto TeleHealth</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link class="iconPaguina" rel=" icon " type="image/png " href="img/logo.jpg" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="style/menu.css">
+        <link rel="stylesheet" href="style/contactoStyle.css">
+        <link rel="stylesheet" href="style/footer.css">
+    </head>
+    <body>
+        <!--Menu De la paguina-->
+        <div class="menu__wrapper">
+            <div class="menu__bar">
+                <a
+                    href="index.html"
+                    title="Logo"
+                >
+                    <img class ="logo" src="img/logo.jpg"/>
+                </a>
+                <img
+                    class="menu-icon"
+                    src="burger-menu.svg"
+                    title='Burger Menu'
+                    alt='Burger Menu'
+                    onclick="toggleMenu(this)"
+                >
+                <ul class="navigation">
+                    <li>
+                        <a
+                           href="#services"
+                           title="Services"
+                        >
+                            Servicios
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#blog"
+                            title="Blog"
+                        >
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#about"
+                            title="About"
+                        >
+                            Acerca de nosotros
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="contacto.html"
+                            title="Contact Us"
+                        >
+                            Contacto
+                        </a>
+                    </li>
+                    <a title="Inicio" href="medicoOPaciente.html">
+                        <button>
+                            Inicia Sesión
+                        </button>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <!--Zona de contacto-->
+        <div class="container-form">
+            <div class="info-form">
+                <h1>Contactenos!!.</h1>
+                <p>¡Hola! Nos encantaría saber de ti. Si tienes preguntas, comentarios o simplemente quieres saludar, aquí están las formas en las que puedes contactarnos:</p>
+                    <a class="linkIniciales" href="#"><i class="fa-solid fa-phone"></i> +57 3234349834</a>
+                    <a class="linkIniciales" href="#"><i class="fa-solid fa-envelope"></i> teamcontacto@TeleHealth.com</a>
+                    <a class="linkIniciales" href="#"><i class="fa-solid fa-location-dot"></i> Cali, Colombia. Cra72N #21-54</a>
+                
+                <div class="links">
+                   <a href="#"><i class="fa-brands fa-facebook"></i></a> 
+                   <a href="#"><i class="fa-brands fa-instagram"></i></a> 
+                   <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                   <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <form action="#" autocomplete="off">
+                <input type="text" name="nombre" class="campo" required placeholder="Nombre y Apellido">
+                <input type="email" name="email" class="campo"  required placeholder="example@support.com">
+                <input type="text" name="Asunto" class="campo"  required placeholder="Asunto">
+                <textarea class="campo"  placeholder="Escribe tu mensaje"></textarea> 
+                <center>
+                <button type="submit" name="enviar" value="enviar mensaje" class="btn-enviar">Enviar Mensaje</button>
+                </center>
+            </form>
+        </div>
+        <!--Footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-row">
+                        <div class="footer-links">
+                            <h4>Servicio</h4>
+                        <ul>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Nuestros servicios</a></li>
+                            <li><a href="#">Politica de Privacidad</a></li>
+                            <li><a href="#">Afiliate</a></li>
+                        </ul>
+                        </div>
+                        <div class="footer-links">
+                            <h4>Profesionales</h4>
+                        <ul>
+                            <li><a href="#">Preguntas</a></li>
+                            <li><a href="#">Compras</a></li>
+                            <li><a href="#">Envios</a></li>
+                            <li><a href="#">Pago</a></li>
+                        </ul>
+                        </div>
+                        <div class="footer-links">
+                            <h4>Pacientes</h4>
+                        <ul>
+                            <li><a href="#">Preguntas</a></li>
+                            <li><a href="#">Compras</a></li>
+                            <li><a href="#">Envios</a></li>
+                            <li><a href="#">Pago</a></li>
+                        </ul>
+                        </div>
+                        <div class="footer-links">
+                            <h4>TeleHealth</h4>
+                                <img src="img/logo.jpg">
+                                <h5>Cali, Colombia</h5>
+                        </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Siguenos</h4>
+                    <div class="social-link">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+    </html>
